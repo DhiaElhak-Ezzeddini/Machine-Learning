@@ -1,5 +1,7 @@
 import numpy as np 
 import matplotlib.pyplot as plt 
+
+
 def z_func(x,y):
     return np.sin(x*5) * np.cos(5*y)/5
 
@@ -14,6 +16,7 @@ Z = z_func(X,Y)
 current_position = (0.7 , 0.4 , z_func(0.7,0.4))
 current_position1 = (0.3 , -0.2 , z_func(0.3,0.2))
 current_position2 = (-0.4 , 0.7 , z_func(0.4,0.7))
+
 alpha = 0.01
 ax = plt.subplot(projection="3d" , computed_zorder=False)
 
